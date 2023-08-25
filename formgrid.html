@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form phiếu điền</title>
+</head>
+<style>
+    *{
+        padding: auto;
+        box-sizing: border-box;
+        margin: 0px;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .main{
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        width: 50%;
+    }
+
+    input[type="radio"]{
+        margin-left: 10px;
+    }
+    .title-item{
+        padding: 7px 10px;
+    }
+    .part-2-gridlayout{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px 10px;
+        padding: 10px 10px;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="part1">
+            <div class="title"><b>Phần 1.</b>Chọn câu trả lời mà bạn đã từng
+                 hành động hoặc nghĩ mình hành động</div>
+            <hr>
+            <div class="title-item">
+                <h4>1. Khi bạn đi đến một noi nào đó trong ngày, bạn sẽ</h4>
+                <input type="radio">
+                <label for="">lên danh sách các công việc thời gian thực hiện các công việ khi bạn đến đó</label>
+                <br>
+                <input type="radio">
+                <label for="">nghĩ đến công việc sẽ làm rồi đi thôi</label>
+            </div>
+            <hr>
+            <div class="title-item">
+                <h4>2. Nếu bạn là một giáo viên, bạn muốn dạy</h4>
+                <input type="radio">
+                <label for="">các khóa học thực nghiệm ( thực tế )</label>
+                <br>
+                <input type="radio">
+                <label for="">các khóa học liên quan đến lý thuyết</label>
+            </div>
+            <hr>
+            <div class="title-item">
+                <h4>3. Thường thì bạn phải là một người</h4>
+                <input type="radio">
+                <label for="">chủ đông giao lưu/giao tiếp</label>
+                <br>
+                <input type="radio">
+                <label for="">trầm tính và dè dặt</label>
+            </div>
+        </div>
+        <div class="part2">
+            <div class="part2-top">
+                <div class="title">
+                    <b>Phần 2.</b>Chọn từ hoặc nhóm từ nào đúng ( gần đúng ) với cách nghĩ hay hành động của bạn
+                </div>
+                <hr>
+                <div class="part-2-gridlayout">
+                    <span>
+                        <h4>27.</h4>
+                        <input type="radio">
+                        <label for="">Lên kế hoạch</label>
+                        <br>
+                        <input type="radio">
+                        <label for="">Không lên kế hoạch</label>
+                    </span>
+                    <span>
+                        <h4>28.</h4>
+                        <input type="radio">
+                        <label for="">Các sự kiện</label>
+                        <br>
+                        <input type="radio">
+                        <label for="">Các ý tưởng</label>
+                    </span>
+                    <span>
+                        <h4>29.</h4>
+                        <input type="radio">
+                        <label for="">Trầm tĩnh</label>
+                        <br>
+                        <input type="radio">
+                        <label for="">Nồng nhiệt</label>
+                    </span>
+                    <span>
+                        <h4>30.</h4>
+                        <input type="radio">
+                        <label for="">Có sức thuyết phục</label>
+                        <br>
+                        <input type="radio">
+                        <label for="">Làm cảm động</label>
+                    </span>
+                    <span>
+                        <h4>31.</h4>
+                        <input type="radio">
+                        <label for="">Tưởng tượng</label>
+                        <br>
+                        <input type="radio">
+                        <label for="">Thực tế</label>
+                    </span>
+                    <span>
+                        <h4>32.</h4>
+                        <input type="radio">
+                        <label for="">Lợi ích</label>
+                        <br>
+                        <input type="radio">
+                        <label for="">Phước lành(Phù hộ)</label>
+                    </span>
+                    <span>
+                        <h4>33.</h4>
+                        <input type="radio">
+                        <label for="">Người cư xử hóa giải</label>
+                        <br>
+                        <input type="radio">
+                        <label for="">Người phán xét/chỉ trích</label>
+                    </span>
+                    <span>
+                        <h4>34.</h4>
+                        <input type="radio">
+                        <label for="">Có hệ thống</label>
+                        <br>
+                        <input type="radio">
+                        <label for="">Tự ý/Linh hoạt</label>
+                    </span>
+                    <span>
+                        <h4>35.</h4>
+                        <input type="radio">
+                        <label for="">Tuyên bố</label>
+                        <br>
+                        <input type="radio">
+                        <label for="">Quan niệm</label>
+                    </span>
+                    <span>
+                        <h4>36.</h4>
+                        <input type="radio">
+                        <label for="">Kín đáo</label>
+                        <br>
+                        <input type="radio">
+                        <label for="">Thích nói</label>
+                    </span>
+                    <span>
+                        <h4>37.</h4>
+                        <input type="radio">
+                        <label for="">Phân tích</label>
+                        <br>
+                        <input type="radio">
+                        <label for="">Đồng cảm</label>
+                    </span>
+                    <span>
+                        <h4>38.</h4>
+                        <input type="radio">
+                        <label for="">Sáng tạo cái mới</label>
+                        <br>
+                        <input type="radio">
+                        <label for="">Làm dựa trên cái có sẵn</label>
+                    </span>
+                </div>
+            </div>
+            <div class="part2-bottom">
+                <input type="radio">
+                <label for="">bạn cảm thấy lạnh nhạt về nó</label>
+                <br>
+                <input type="radio">
+                <label for="">bạn rất chán nản với nó</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
